@@ -64,7 +64,7 @@
     }
 
     #no {
-      background-color: #444;
+      background-color: #ff85a2;
       color: white;
       left: 55%;
       top: 65%;
@@ -87,10 +87,10 @@
 <body>
 
   <h1>Layal 💖 will you be my Valentine? 💘</h1>
-  <h2>🥺 ja3far will be upset if u say no 💔</h2>
+  <h2>💞 ja3far will be upset if u say no 💗</h2>
 
   <button id="yes" class="btn" onclick="showLove()">Yes 💕</button>
-  <button id="no" class="btn">No 😭</button>
+  <button id="no" class="btn">No 💗</button>
 
   <script>
     const noBtn = document.getElementById("no");
@@ -112,3 +112,14 @@
     function showLove() {
       document.body.innerHTML = `
         <h1 style="margin-top:200px; color:white; font-size:50px; text-shadow:0 0 20px white;">
+          YAYYYY 💞💘 BEST DECISION EVER 💖✨
+        </h1>
+        <p style="color:white; font-size:20px;">
+          You just made Ja3far very happy 💕💗
+        </p>
+      `;
+
+      for (let i = 0; i < 100; i++) {
+        const confetti = document.createElement("div");
+        confetti.innerHTML = "💖";
+        confetti.style.position = "absolute";
